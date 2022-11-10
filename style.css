@@ -1,0 +1,63 @@
+.topnav{
+    overflow: hidden;
+    background-color: brown;
+    position: relative;
+}
+.topnav #myLinks{
+    display: none;
+}
+.topnav a {
+    color: white;
+    padding: 14px 16 px;
+    text-decoration: none;
+    font-size: 17px;
+    display:  block;
+}
+.topnav a.icon{
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.topnav a:hover{
+    background-color: cadetblue;
+    color: black;
+}
+.active{
+    background-color: bisque;
+    color: white;
+}
+.header{
+    text-align: center;
+}
+.container{
+    border: 2px solid blueviolet;
+    background-color: aqua;
+    padding: 16 px;
+    margin: 16px 0;
+}
+.container::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.container img{
+    float: left;
+    margin-right: 20px;
+    border: 50%;
+}
+.container span{
+    font-size: 20px;
+    margin-right: 15px;
+}
+@media (max-width: 500px){
+    .container{
+        text-align: center;
+    }
+    .container img{
+        margin: auto;
+        float: none;
+        display: block;
+    }
+}
